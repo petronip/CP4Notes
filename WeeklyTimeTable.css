@@ -1,0 +1,15 @@
+table {
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+body{
+background: #800000;
+
+  background: -webkit-linear-gradient(-45deg, #FF0000, FFA500);
+
+  background: linear-gradient(-45deg, #808080, #800000);
+}
