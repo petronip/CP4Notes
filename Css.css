@@ -1,0 +1,13 @@
+h1{
+	color: white;
+	text-align: center;
+	text-shadow: 2px 0 0 #00008B, -2px 0 0 #00008B	, 0 2px 0 #00008B	, 0 -2px 0 #00008B	, 1px 1px #00008B, -1px -1px 0 #00008B	, 1px -1px 0 #00008B, -1px 1px 0 #00008B;
+	
+}
+body {
+  background: #141E30;
+  background: -webkit-linear-gradient(-45deg, #006400, #ADFF2F);
+  background: linear-gradient(-45deg, #006400, #ADFF2F);
+  margin: 5;
+  text-align: left;
+}
