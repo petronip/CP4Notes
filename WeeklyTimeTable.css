@@ -2,20 +2,24 @@ h1{
 	text-align: center;
 	color: white;
 	font-family: Georgia;
+	text-shadow: 2px 0 0 #FFDC00, -2px 0 0 #FFDC00, 0 2px 0 #FFDC00, 0 -2px 0 #FFDC00, 1px 1px #FFDC00, -1px -1px 0 #FFDC00, 1px -1px 0 #FFDC00, -1px 1px 0 #FFDC00;
+
 	
 }
 /* In h1 I aligned my text in the center and turned it white. */
 table {
-    border-collapse: collapse;
+  border-collapse: collapse;
 }
 
 table, th, td {
-    border: 1px solid black;
+  border: 1px solid black;
 }
 
-body{
 
-  color: white;
-  font-family: Arial;
-  background: url(https://media.giphy.com/media/ENagATV1Gr9eg/giphy.gif) 0 0;
+ body {
+  background: #141E30;
+  background: -webkit-linear-gradient(-45deg, #800000, #FFA500);
+  background: linear-gradient(-45deg, #800000, #FFA500);
+  margin: 5;
+  text-align: center;
 }
