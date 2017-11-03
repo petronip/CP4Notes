@@ -1,0 +1,30 @@
+h1{
+	color: white;
+	text-align: center;
+	text-shadow: 2px 0 0 #00008B, -2px 0 0 #00008B	, 0 2px 0 #00008B	, 0 -2px 0 #00008B	, 1px 1px #00008B, -1px -1px 0 #00008B	, 1px -1px 0 #00008B, -1px 1px 0 #00008B;
+	
+}
+table{
+	border-collapse: collapse;
+}
+
+table, td,th {
+    border: 1px solid black;
+	color: white;
+}
+
+
+body {
+  background: #141E30;
+  background: -webkit-linear-gradient(-45deg, #800000, #FFA500);
+  background: linear-gradient(-45deg, #800000, #FFA500);
+  margin: 5;
+  text-align: left;
+}
+
+img {
+    display: block;
+    margin: auto;
+    width: 40%;
+}
+
