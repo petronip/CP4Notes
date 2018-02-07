@@ -3,7 +3,11 @@ h1{
 	color: white;
 	font-family: Georgia;
 	text-shadow: 2px 0 0 #FFDC00, -2px 0 0 #FFDC00, 0 2px 0 #FFDC00, 0 -2px 0 #FFDC00, 1px 1px #FFDC00, -1px -1px 0 #FFDC00, 1px -1px 0 #FFDC00, -1px 1px 0 #FFDC00;
-
+	-webkit-animation: shadowcolor 0.9s infinite;
+    animation: shadowcolor 0.9s infinite;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+	text-align: center;
 	
 }
 /* In h1 I aligned my text in the center and turned it white. */
@@ -15,11 +19,86 @@ table, th, td {
   border: 1px solid black;
 }
 
+@keyframes shadowcolor {
 
- body {
-  background: #141E30;
-  background: -webkit-linear-gradient(-45deg, #800000, #FFA500);
-  background: linear-gradient(-45deg, #800000, #FFA500);
-  margin: 5;
-  text-align: center;
+    0% {
+        background-color: #45a3e5
+    }
+
+    30% {
+        background-color: #66bf39
+    }
+
+    60% {
+        background-color: #eb670f
+    }
+
+    90% {
+        background-color: #f35
+    }
+
+    100% {
+        background-color: #864cbf
+    }
 }
+
+@keyframes bgcolor {
+    0% {
+        background-color: #45a3e5
+    }
+
+    30% {
+        background-color: #66bf39
+    }
+
+    60% {
+        background-color: #eb670f
+    }
+
+    90% {
+        background-color: #f35
+    }
+
+    100% {
+        background-color: #864cbf
+    }
+}
+
+
+@keyframes frank
+{
+    0% {
+        background-color: #66bf39
+    }
+
+    30% {
+        background-color: #45a3e5
+    }
+
+    60% {
+        background-color: #eb670f
+    }
+
+    90% {
+        background-color: #f35
+    }
+
+    100% {
+        background-color: #864cbf
+    }
+} 
+body {
+    -webkit-animation: bgcolor 20s infinite;
+    animation: bgcolor 10s infinite;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+	text-align: center;
+}
+
+
+th,td:hover{
+    cursor: pointer;
+	background-color: frank;
+	animation:frank 1s infinite;
+}
+
