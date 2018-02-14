@@ -9,7 +9,10 @@
 <body>	
 		<input id="something" type="text" name="search" placeholder="Search..">
 		<input type="submit" onclick= "highlightingstyle()" value="search for da wae">
-	
+<form>
+		<input TYPE="button" onclick="history.go(0)" VALUE="Refresh For Quality Memes">
+</form>
+<!-- this is my search bar and 	
 	
 	<h1> Loyola Schedule </h1>
 <!-- title for my schedule -->
@@ -43,7 +46,7 @@
 				<td class = "Comp"> Comp Programming with Mr Falafel </td>
 				<td class = "His"> History with Mr Madrid </td>
 				<td class = "Math"> Math with Mr Daddio </td>
-				<td> No class </td>
+				<td class = "No"> No class </td>
 				<td class = "Fr"> French with Mme Bonjour </td>
 				<td class = "Eng"> English with Ms Lady Macbeth </td>
 			</tr>
@@ -74,7 +77,7 @@
 				<td class = "Rel"> Religion with Fr Diaspora </td>
 				<td class = "Sci"> Science with Mr Gooday </td>
 				<td class = "Fr"> French with Mme Bonjour </td>
-				<td> No Class </td>
+				<td class = "No"> No Class </td>
 				<td class = "Fr"> French with Mme Bonjour </td>
 			</tr>
 		
@@ -88,9 +91,9 @@
 				<td class = "Music"> Music with Mr Football </td>
 				<td class = "La"> LA with Mr Respect </td>
 				<td class = "His"> History with Mr Madrid </td>
-				<td> None </td>
-				<td> None </td>
-				<td> None </td>
+				<td class = "No"> None </td>
+				<td class = "No"> None </td>
+				<td class = "No"> None </td>
 			</tr>
 			
 <!-- color for my row of my schedule -->
@@ -119,13 +122,14 @@
 				<td class = "Music"> Music with Mr Football </td>
 				<td class = "Eng"> English with Ms Lady Macbeth </td>
 				<td class = "Eng"> English with Ms Lady Macbeth</td>
-				<td> No class </td>
-				<td> No Class </td>
+				<td class = "No">No class </td>
+				<td class = "No">No Class </td>
 					<script>
 					function highlightingstyle(){
 						var selectedClass = document.getElementById("something").value;
 						switch (selectedClass){
-					
+/** This is my javascript**/
+/** There is a function a variable and switch **/					
 							case "Math" :
 								selectedClass = "Math"						
 								break;
@@ -151,12 +155,28 @@
 								selectedClass = "Eng"
 								break;
 							case "Computer Programming":
-								selectedClass = "Comp";
+								selectedClass = "Comp"
 								break;
+							case "Homeroom":
+								selectedClass = "Hr"
+								break;
+							case "La":
+								selectedClass = "La"
+								break;
+							case "Gym":
+								selectedClass = "PE"
+								break;
+							case "No Class":
+								selectedClass = "No"
+								break;
+/** The computer checks the script as it runs and looks through the cases **/
+/** Each case identifies a different class **/
+							locaton.reload();
 							}	
 						var className = document.getElementsByClassName(selectedClass);	
 						for (i= 0; i<className.length; i++ ){
-								className[i].style.backgroundColor = "green";
+								className[i].style.backgroundColor = "maroon";
+/** this variable documents the variable "selectedClass" and checks for all the objects in the class and whatever you type in and search will change the colour "Maroon"**/								
 						}
 					}
 					</script>	
