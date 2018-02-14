@@ -7,10 +7,8 @@
 <!-- this is my link to my Css Folder -->
 </head>
 <body>	
-	<form id="some stuff">
-		<input type="text" name="search" placeholder="Search..">
-		<input type="submit" value="search for da wae">
-	</form>
+		<input id="something" type="text" name="search" placeholder="Search..">
+		<input type="submit" onclick= "highlightingstyle()" value="search for da wae">
 	
 	
 	<h1> Loyola Schedule </h1>
@@ -124,57 +122,47 @@
 				<td> No class </td>
 				<td> No Class </td>
 					<script>
-					var something = "Math";
 					function highlightingstyle(){
-						var selectedClass;
-						switch (something){
+						var selectedClass = document.getElementById("something").value;
+						switch (selectedClass){
 					
 							case "Math" :
-								selectedClass = "Math"
-								console.log("As far as math is concerned your failing")
-						
+								selectedClass = "Math"						
 								break;
 							case "Religion":
 								selectedClass = "Rel"
-								console.log("Lets do nothing for 1 hour");
 								break;
 							case "Science":
 								selectedClass = "Sci"
-								console.log("Great day for Science");
 								break;
 							case "History":
 								selectedClass = "His"
-								console.log("Bonjours Mesieurs");
 								break;
 							case "French":
 								selectedClass = "Fr"
-								console.log("KOSTA!!");
 								break;
 							case "Music":
 								selectedClass = "Music"
-								console.log("It's A football team");
 								break;
 							case "Speech":
 								selectedClass = "Sp"
-								console.log("Ok s'il vous plait");
 								break;
-							case "English"
-								selectedClass = "Eng";
-								cnsole.log("PAULOOOO!!!!");
+							case "English" :
+								selectedClass = "Eng"
 								break;
-							case "Computer Programming";
+							case "Computer Programming":
 								selectedClass = "Comp";
 								break;
-								}		
-					for (i= 0 i<className.length; i++ ){
-							selectedclassName[i].value.whateveryouwant = "Hey there Paolo";
-							}
-							}
+							}	
+						var className = document.getElementsByClassName(selectedClass);	
+						for (i= 0; i<className.length; i++ ){
+								className[i].style.backgroundColor = "green";
+						}
+					}
 					</script>	
 				
 	
 		</table>
-
 		<script>
 		
 		</script>
