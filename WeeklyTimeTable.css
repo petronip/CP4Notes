@@ -10,11 +10,11 @@ h1{
 	text-align: center;
 	
 }
-/* In h1 I aligned my text in the center and turned it white. */
+/* In h1 I aligned my text in the center and turned it white. THis also changes the colour around the title*/
 table {
   border-collapse: collapse;
 }
-
+/* this creates a border */
 table, th, td {
   border: 1px solid black;
 }
@@ -41,7 +41,7 @@ table, th, td {
         background-color: #864cbf
     }
 }
-
+/* this changes the colour of my background using the variable shadorcolor */
 @keyframes bgcolor {
     0% {
         background-color: #45a3e5
@@ -94,11 +94,12 @@ body {
     animation-direction: alternate;
 	text-align: center;
 }
-
+/* this changes the colour around the body */
 
 th,td:hover{
     cursor: pointer;
 	background-color: frank;
 	animation:frank 1s infinite;
 }
+/* this changes each little class' colours when you hover over it */
 
